@@ -16,7 +16,7 @@ public class baseController {
     @Autowired
     UserService userService;
 
-    @RequestMapping("/returnData")
+    @RequestMapping(value="/returnData", method=RequestMethod.GET)
     @ResponseBody
     public BaseResponse returnData(){
         BaseResponse baseResponse= new BaseResponse();
